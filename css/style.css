@@ -1,0 +1,415 @@
+
+/* \\\\\\\ general-cellector //////// */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pdg{
+    padding: 100px  0;
+}
+.header-tit{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(2, 21, 29);
+    
+}
+
+.line-tit{
+    width: 100px;   height: 5px;
+    background-color:rgb(69, 44, 184);
+    margin: auto;
+    margin-bottom: 65px;
+    margin-top: 15px ;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+    }
+    .mid{
+        margin: 0px  5%;
+    }
+
+    /* ------------------end-general-cellector----------------- */
+
+        /* \\\\\\\\\\\\\\  header //////////// */
+.header{
+    width: 100%;       height: 60px;
+        background-color: rgb(29, 23, 23);
+        opacity: 0.7;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 30;
+        
+}
+.header-img1{
+    width: 150; height: 60;
+    margin-left: 150;
+    float: left;
+
+}
+
+.header-list{
+    list-style-type: none;
+    float: right;
+    }
+.header-list li{
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 20px;
+
+}
+.header-list a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+        /* -------------------------------- end-header -------------------------- */
+
+
+                                     /* \\\\\\\\\\\\hero-img///////////////// */
+    .hero-img{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/ddd.jpg);
+        position: relative;
+    }
+    .overley-hero-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0,0.7);
+    }
+    .content-hero-img{
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50% , -50% );
+        text-align: center;
+    }
+    .titel1-content-hero-img{
+        color: white;
+        font-size: 55px;
+    }
+    .p-content-hero-img{
+        color: white;
+        letter-spacing: 2px;
+        margin: 15px  0px ;
+    }
+    .btn-content-hero-img{
+        padding: 15px;
+        border: 0;
+        border-radius: 6px;
+        font-size: 19px;
+        text-transform: capitalize;
+        margin-right: 12px;
+        
+    }
+    .btn-hero{
+        background-color: rgb(24, 24, 235);
+        color: wheat;
+    }
+    .btn-content-hero-img:hover{
+        opacity: 0.8;
+    }
+                                    /* --------------------------------end hero-img -------------------------- */
+
+                                        /* \\\\\\\\\\\\\\ welcom/////////////// */
+.wlcom-content{
+        overflow: auto;
+}
+.div_welcom{
+    float: left;
+    width: 30%;
+    padding: 30px 20px;
+    border: 1px solid   #323233;
+    text-align: center;
+    position: relative;
+}
+.div_welcom i {
+    color: #6195ff;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.div_welcom h2{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+} 
+.div_welcom p {
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: rgb(143, 146, 146);
+}
+.welcom-link {
+    color: #6195ff;
+    text-transform: capitalize;
+}
+.div_welcom a {
+    text-decoration: none;
+}
+
+ /* \\\\\\\\ pseudo elements  :  after & before  */
+ .div_welcom::after{
+    position: absolute;
+    content: " ";
+
+    width: 0;
+    height:0%;
+
+    top: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0;
+    transition: 1s;
+   }
+   .div_welcom:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+   }
+
+                        /* --------------------------------end wlcom -------------------------- */
+
+/* \\\\\\\\\\\\\\ team /////////////// */
+.team-content{
+    overflow: auto;
+
+}
+
+.team-item{
+    float: left;
+    background-color: rgb(168, 168, 166);
+    width: 30%;
+    padding: 14px     18px;
+    text-align: center;
+    position: relative;
+    }
+.pic2{
+    margin: 0px  5%;
+}
+.team-img{
+    background-color: aqua;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.team-overley{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(0, 0, 0,0.5);
+   visibility: hidden;
+   opacity: 0;
+   transition: 1s;
+   }
+   .team-item:hover .team-overley{
+    opacity: 0.6;
+    visibility:visible;
+   }
+   /* \\\\\\\\ pseudo elements  :  after & before  */
+   .team-item::after{
+    position: absolute;
+    content: " ";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color:rgb(88, 89, 90) ;
+    opacity: 0;
+    transition: 2s;
+   }
+   .team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+   }
+              /* \\\\\\\\\\\\\\\\\\//////////////// */
+   
+   .team-overley a{
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    background-color: rgb(66, 112, 240);
+    color: white;
+    }
+    .team-overley a i{
+        line-height: 40px;
+    }
+    .team-info-title{
+        text-transform: uppercase;
+        padding: 12px  0px;
+        color: rgb(70, 69, 69);
+    }
+    .team-info-sp1{
+        text-transform: capitalize;
+        color: rgb(99, 98, 98);
+    }
+    .team-item:hover .team-info-title{
+        color: rgb(255, 255, 255);
+
+    }
+.team-item:hover .team-info-sp1{
+    color: rgb(9, 6, 201);
+}
+/* \\\\\\\\\\\\\\\\\\\ background ///////////////////////// */
+
+.background {
+    position: relative;
+    background-image: url(../images/eee.jpeg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overlay-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.items-background {
+    overflow: hidden;
+    padding-top: 130px;
+}
+.item-background {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.item-background  i {
+    color: #6195ff;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.item-background  h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.item-background  span {
+    color: #fff;
+}
+
+/* \\\\\\\\\\\\\\\\\\\ price-new ///////////////////////// */
+.price-content{
+    overflow: auto;
+}
+.price-table{
+    position: relative;
+}
+.div_f1{
+    float: left;
+    background-color: #e8e9ec;
+    width: 30%;
+    padding: 30px 15px;
+    border: 1px solid   #323233;
+    text-align: center;
+}
+.h2f1 {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #646363;
+}
+.div_f2 {
+    width: 100px;
+    height: 100px;
+    padding: 12px 0;
+    margin: 20px auto;
+    border: 2px solid #5485e9;
+    border-radius: 50%;
+}
+.pf2_1 {
+    font-size: 55px;
+}
+.pf2_2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+.p_f1{
+    font-size: 15px;
+    color: rgb(150, 148, 148);
+    line-height: 25px;
+    }
+    
+    .but1{
+        margin-top: 15px;
+        padding: 4px;
+        font-size: 18px;
+        border: 2px solid#5485e9;
+        width: 140px;
+    }
+    
+
+                /* -------------- end --------------------- */
+
+
+                /* \\\\\\\\\\\ botm //////////////// */
+
+.botm {
+        background-color: #3e3f44;
+        text-align: center;
+        height: 350px;
+        padding: 60px 0;
+                           
+}
+.botm-img {
+         width: 160px;
+        height: 70px;
+}
+.botm-lnk{
+    list-style: none;
+    margin: 20px 0;
+
+}
+.botm-lnk li {
+    display: inline-block;
+    background-color: #6195ff;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.botm-lnk li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #548af7;
+    color: #fff;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-right: 15px;
+    font-size: 30px;
+    margin: 0 8px;
+}
+.botm-lnk li a:hover{
+    opacity: #0e3686;
+
+}
+.botm p{
+    color: #9d9fa5;
+}
